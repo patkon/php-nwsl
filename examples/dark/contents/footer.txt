@@ -1,0 +1,2 @@
+copyright © 2022, Max Mustermann GmbH<br>
+Hier kommt der Footer Text
