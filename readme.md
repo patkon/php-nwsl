@@ -55,6 +55,7 @@ Each topic is stored as an array `blocks[]`. Available keys are:
 
 #### Examples
 
+Example for one Topic, image on the left, text on the right
 ```php
 $blocks[] = array(
     "template" => '1_topic_img_left_cta.html',
@@ -65,6 +66,7 @@ $blocks[] = array(
     "link_text" => 'Read more ...'
 );
 ```
+Example for two topics
 ```php
 $blocks[] = array(
     "template" => '2_topics_img_cta.html',
