@@ -46,6 +46,12 @@ $blocks[] = array(
 );
 
 $blocks[] = array(
+    "template" => '1_topic_txt_only.html',
+    "heading" => 'A simple text block',
+    "text" => 'This is the Text for the simple text block.'
+);
+
+$blocks[] = array(
     "template" => '1_topic_img_left_cta.html',
     "heading" => 'Heading Block One',
     "image" => $newsletter_root.'/images/example-image.jpg',
