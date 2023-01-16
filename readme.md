@@ -46,11 +46,11 @@ Each topic is stored as an array `blocks[]`. Available keys are:
 
 | key       | value                                                                                                          |
 |-----------|----------------------------------------------------------------------------------------------------------------|
-| template  | filename of one of the available templates from the directory `emplates`                                       |
+| template  | filename of one of the available templates from the directory `templates`                                      |
 | heading   | The headline for this topic                                                                                    |
 | image     | The image for this topic. The variable `$newsletter_root` ensures that you have the absolute path to the image |
 | text      | The Text for this topic                                                                                        |
-| link      | The Link for the button                                                                                        |
+| link      | The Link (url) for the button                                                                                  |
 | link_text | The Label for the button                                                                                       |                            
 
 #### Examples
@@ -91,6 +91,7 @@ $blocks[] = array(
 * ```1_topic_img_left_cta.html``` One Topic, image on the left and call to action button
 * ```1_topic_img_right_cta.html``` One Topic, image on the right and call to action button
 * ```1_topic_img_full_cta.html``` One Topic, image on the top and call to action button
+* ```1_topic_txt_only.html``` One Topic, only text block
 
 The Templates in both examples are the same.
 
