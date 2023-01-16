@@ -1,3 +1,4 @@
 .idea
 *.afphoto
 *.afdesign
+.DS_STORE
