@@ -4,14 +4,9 @@ Create responsive HTML emails (Newsletters) with a few lines of PHP code.
 You don't really need to know how to program. It is very easy.
 You can Copy the Code and use it for mailchimp.com or cleverrech.com for example.
 
-## Examples
-
-In this repository we have two examples. 
-A bright ```examples/bright/``` and a dark ```examples/dark/``` Template.
-
 ## How it works
 
-1. Copy the bright or dark example to your server.
+1. Copy the bright example to your server.
 2. Open the file `variables.php` and set your colors.
 3. Add/Edit the contents.
 4. Grab the code.
