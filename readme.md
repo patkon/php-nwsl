@@ -87,6 +87,7 @@ $blocks[] = array(
 
 * ```_header.html``` for the header of your email
 * ```_footer.html``` for the footer of your email
+* ```2_topics_img_txt_cta.html``` Two Topics, images, text and call to action button
 * ```2_topics_img_cta.html``` Two Topics, images and call to action button
 * ```1_topic_img_left_cta.html``` One Topic, image on the left and call to action button
 * ```1_topic_img_right_cta.html``` One Topic, image on the right and call to action button

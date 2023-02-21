@@ -1,11 +1,28 @@
-<!-- body thema 1 + 2 desktop -->
+<!-- one topic full text, two images and call to action | desktop -->
 <div class="mobile-hide">
+    <table class="reset-top reset-bottom" width="860" cellspacing="0" cellpadding="0" align="center" bgcolor="{body_bg}">
+        <tbody>
+        <tr>
+            <td width="860" bgcolor="{topics_bg}" valign="top" style="padding-top:15px;padding-right:15px;padding-left:10px;">
+                <div class="layout-block-inner">
+                    <h2>{headline}</h2>
+                    <div class="text">
+                        {text}
+                    </div>
+                </div>
+                <div class="layout-block-inner" style="padding-top:10px;">
+
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
     <table class="reset-top reset-bottom mso-table-padding" width="860" cellspacing="0" cellpadding="0" align="center" bgcolor="{body_bg}">
         <tbody>
         <tr>
             <td class="mobile-full" width="420" valign="top" bgcolor="{topics_bg}" style="padding-top:15px;padding-right:15px;padding-left:15px;padding-bottom:15px;">
                 <div class="layout-block-inner">
-                    <h2>{headline_left}</h2>
                     <div class="image-container">
                         <a href="{link_left}">
                             <img width="390" src="{image_left}" alt="{headline_left}">
@@ -13,12 +30,11 @@
                     </div>
                 </div>
             </td>
-            <td width="20" bgcolor="{body_bg}">
-                <img width="20" height="1" src="{nwsl_root}/images/background-body.jpg" alt="">
+            <td width="20" bgcolor="{topics_bg}">
+                <img width="20" height="1" src="{nwsl_root}/images/background-topics.jpg" alt="">
             </td>
             <td class="mobile-full" width="420" valign="top" bgcolor="{topics_bg}" style="padding-top:15px;padding-right:15px;padding-left:15px;padding-bottom:15px;">
                 <div class="layout-block-inner" style="<?php echo $css_inline_layoutblock; ?>">
-                    <h2>{headline_right}</h2>
                     <div class="image-container">
                         <a href="{link_right}">
                             <img width="390" src="{image_right}" alt="{headline_right}">
@@ -34,8 +50,8 @@
                 </div>
 
             </td>
-            <td width="20" bgcolor="{body_bg}">
-                <img width="20" height="1" src="{nwsl_root}/images/background-body.jpg" alt="">
+            <td width="20" bgcolor="{topics_bg}">
+                <img width="20" height="1" src="{nwsl_root}/images/background-topics.jpg" alt="">
             </td>
             <td width="420" bgcolor="{topics_bg}" align="center" valign="bottom" style="padding-top:0px;padding-right:15px;padding-left:15px;padding-bottom:15px;">
                 <div class="layout-block-inner">
@@ -45,19 +61,42 @@
         </tr>
         </tbody>
     </table>
+
 </div>
-<!-- body thema 1 + 2 desktop end -->
 
-
-<!-- body thema 1 + 2 mobile -->
+<!-- one topic full text, two images and call to action | mobile -->
 
 <!--[if !mso]><!--><div class="mobile-only" style="display:none;width:0px;overflow:hidden;mso-hide:all;font-size:0;line-height:0;margin:0 auto;">
+
+    <table class="reset-top reset-bottom" width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="{body_bg}">
+        <tbody>
+        <tr>
+            <td width="100%" bgcolor="{topics_bg}" valign="top" style="padding-top:15px;padding-right:15px;padding-left:15px;">
+                <div class="layout-block-inner">
+                    <h2>{headline}</h2>
+                    <div class="text">
+                        {text}
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="reset-top reset-bottom" width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="{body_bg}">
+        <tbody>
+        <tr>
+            <td>
+                <div style="height:20px;background:{topics_bg}"> &nbsp; </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
     <table class="reset-top reset-bottom mso-table-padding" width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="{body_bg}">
         <tbody>
         <tr>
             <td class="mobile-full" width="420" valign="top" bgcolor="{topics_bg}" style="padding-top:15px;padding-right:15px;padding-left:15px;padding-bottom:15px;">
                 <div class="layout-block-inner">
-                    <h2>{headline_left}</h2>
                     <div class="image-container">
                         <a href="{link_left}">
                             <img src="{image_left}" alt="mobile {headline_left}">
@@ -72,7 +111,6 @@
         <tr>
             <td class="mobile-full" width="420" valign="top" bgcolor="{topics_bg}" style="padding-top:15px;padding-right:15px;padding-left:15px;padding-bottom:15px;">
                 <div class="layout-block-inner">
-                    <h2>{headline_right}</h2>
                     <div class="image-container">
                         <a href="{link_right}">
                             <img src="{image_right}" alt="mobile {headline_right}">
@@ -86,5 +124,7 @@
         </tr>
         </tbody>
     </table>
+
 </div><!--<![endif]-->
-<!-- body thema 1 + 2 mobile end -->
+
+<!-- one topic full text, two images and call to action | mobile end -->

@@ -139,7 +139,11 @@ include '_variables.php';
                 $template = str_replace('{link_text_right}',$block['link_text_right'],$template);
 
                 echo $template;
-                echo $tpl_devider;
+
+                $has_divider = strpos($block['template'], "divider");
+                if($has_divider === false) {
+                    echo $tpl_devider;
+                }
 
             }
 

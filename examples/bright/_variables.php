@@ -19,8 +19,8 @@ $newsletter_root = $server_name.$_SERVER['REQUEST_URI'];
 $newsletter_root = str_replace('index.php','',$newsletter_root);
 $newsletter_root = str_replace('web.php','',$newsletter_root);
 $newsletter_root = str_replace('code.php','',$newsletter_root);
-$newsletter_web_view = $newsletter_root.'web.php';
-
+$newsletter_root = rtrim($newsletter_root,"/");
+$newsletter_web_view = $newsletter_root.'/web.php';
 
 $preheader = file_get_contents('contents/preheader.txt');
 $text_webview = file_get_contents('contents/text_webview.txt');
@@ -52,6 +52,23 @@ $blocks[] = array(
 );
 
 $blocks[] = array(
+    "template" => '1_topic_2_img_cta.html',
+    "heading" => 'One Topic and two Call to action',
+    "text" => file_get_contents('contents/text1.txt'),
+    "image_left" => $newsletter_root.'/images/example-image.jpg',
+    "image_right" => $newsletter_root.'/images/example-image.jpg',
+    "link_left" => 'https://example.com',
+    "link_right" => 'https://example.com',
+    "link_text_left" => 'Left CTA ...',
+    "link_text_right" => 'Right CTA ...'
+);
+
+$blocks[] = array(
+    "template" => '_tpl_divider_img.html',
+    "image" => $newsletter_root.'/images/divider.jpg',
+);
+
+$blocks[] = array(
     "template" => '1_topic_img_left_cta.html',
     "heading" => 'Heading Block One',
     "image" => $newsletter_root.'/images/example-image.jpg',
@@ -61,7 +78,7 @@ $blocks[] = array(
 );
 
 $blocks[] = array(
-    "template" => '2_topics_img_cta.html',
+    "template" => '2_topics_img_txt_cta.html',
     "heading_left" => 'The left Headline',
     "heading_right" => 'The right Headline',
     "image_left" => $newsletter_root.'/images/example-image.jpg',
@@ -72,6 +89,18 @@ $blocks[] = array(
     "link_right" => 'https://example.com',
     "link_text_left" => 'Read more ...',
     "link_text_right" => 'Read more ...'
+);
+
+$blocks[] = array(
+    "template" => '2_topics_img_cta.html',
+    "heading_left" => 'The left Headline',
+    "heading_right" => 'The right Headline',
+    "image_left" => $newsletter_root.'/images/example-image.jpg',
+    "image_right" => $newsletter_root.'/images/example-image.jpg',
+    "link_left" => 'https://example.com',
+    "link_right" => 'https://example.com',
+    "link_text_left" => 'More Information ...',
+    "link_text_right" => 'More Information ...'
 );
 
 $blocks[] = [
