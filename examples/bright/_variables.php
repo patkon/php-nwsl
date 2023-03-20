@@ -77,6 +77,20 @@ $blocks[] = array(
 );
 
 $blocks[] = array(
+    "template" => '1_topic_img_left.html',
+    "heading" => 'One image on the left',
+    "image" => $newsletter_root.'/images/example-image.jpg',
+    "text" => 'Template: 1_topic_img_left.html - This is the Text. No Call to action button.'
+);
+
+$blocks[] = array(
+    "template" => '1_topic_img_right.html',
+    "heading" => 'One image on the right',
+    "image" => $newsletter_root.'/images/example-image.jpg',
+    "text" => 'Template: 1_topic_img_right.html - This is the Text. No Call to action button.'
+);
+
+$blocks[] = array(
     "template" => '1_topic_img_left_cta.html',
     "heading" => 'Heading Block One',
     "image" => $newsletter_root.'/images/example-image.jpg',
@@ -91,8 +105,8 @@ $blocks[] = array(
     "heading_right" => 'The right Headline',
     "image_left" => $newsletter_root.'/images/example-image.jpg',
     "image_right" => $newsletter_root.'/images/example-image.jpg',
-    "text_left" => file_get_contents('contents/text4.txt'),
-    "text_right" => file_get_contents('contents/text5.txt'),
+    "text_left" => file_get_contents('contents/text1.txt'),
+    "text_right" => file_get_contents('contents/text1.txt'),
     "link_left" => 'https://example.com',
     "link_right" => 'https://example.com',
     "link_text_left" => 'Read more ...',
@@ -115,7 +129,7 @@ $blocks[] = [
     "template" => '1_topic_img_right_cta.html',
     "heading" => 'Heading Block Three',
     "image" => $newsletter_root.'/images/example-image.jpg',
-    "text" => file_get_contents('contents/text2.txt'),
+    "text" => file_get_contents('contents/text1.txt'),
     "link" => 'https://example.com',
     "link_text" => 'Read more'
 ];
@@ -124,7 +138,7 @@ $blocks[] = [
     "template" => '1_topic_img_full_cta.html',
     "heading" => 'Heading Block four',
     "image" => $newsletter_root.'/images/example-image.jpg',
-    "text" => file_get_contents('contents/text7.txt'),
+    "text" => file_get_contents('contents/text1.txt'),
     "link" => 'https://example.com',
     "link_text" => 'Read more ...'
 ];
