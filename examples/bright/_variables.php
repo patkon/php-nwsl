@@ -52,6 +52,14 @@ $blocks[] = array(
 );
 
 $blocks[] = array(
+    "template" => '1_topic_txt_cta.html',
+    "heading" => 'A simple text block with Call to action',
+    "text" => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor ...',
+    "link" => 'https://example.com',
+    "link_text" => 'Read more ...'
+);
+
+$blocks[] = array(
     "template" => '1_topic_2_img_cta.html',
     "heading" => 'One Topic and two Call to action',
     "text" => file_get_contents('contents/text1.txt'),
